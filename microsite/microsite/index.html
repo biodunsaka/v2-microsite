@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home | Advantaged Supply Program</title><meta name="description" content="Term crude and LNG supply, one to five years, Brent-linked pricing and certified emissions data. A student capstone concept.">
+<style>
+:root{--navy:#0B2545;--slate:#13315C;--amber:#D98E04;--ice:#8DA9C4;--tint:#EEF2F6;--ink:#1A1A1A;--mid:#5A6B7D;--bg:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Calibri,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+a{color:var(--slate)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.notice{background:#FFF4D6;color:#5A3E00;font-size:13px;text-align:center;padding:8px 16px;border-bottom:1px solid #E8C97A}
+header{background:var(--navy);color:#fff}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px;flex-wrap:wrap}
+.brand{font-family:Cambria,Georgia,serif;font-size:20px;font-weight:700;color:#fff;text-decoration:none;letter-spacing:.3px}
+.brand span{color:var(--amber)}
+.links a{color:#D9E1EA;text-decoration:none;margin-left:22px;font-size:15px}
+.links a.active,.links a:hover{color:#fff;border-bottom:2px solid var(--amber);padding-bottom:4px}
+.btn{display:inline-block;background:var(--amber);color:#1A1A1A;font-weight:700;padding:13px 24px;border-radius:6px;text-decoration:none;font-size:16px}
+.btn:hover{background:#F0A010}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,var(--slate) 100%);color:#fff;padding:72px 0 64px}
+.hero h1{font-family:Cambria,Georgia,serif;font-size:42px;line-height:1.15;max-width:760px;margin-bottom:18px}
+.hero p.lead{font-size:20px;color:#D9E1EA;max-width:720px;margin-bottom:28px}
+.hero .for{font-size:14px;color:var(--amber);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px;font-weight:700}
+section{padding:56px 0}
+section.alt{background:var(--tint)}
+h2{font-family:Cambria,Georgia,serif;font-size:30px;color:var(--navy);margin-bottom:12px}
+h3{font-size:19px;color:var(--navy);margin-bottom:8px}
+.sub{color:var(--mid);font-size:17px;max-width:760px;margin-bottom:32px}
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:#fff;border:1px solid #DDE3EA;border-radius:8px;padding:24px}
+.card .tag{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--amber);font-weight:700;margin-bottom:8px}
+.card p{color:#333;font-size:15.5px}
+.stat{font-family:Cambria,Georgia,serif;font-size:40px;color:var(--navy);font-weight:700;line-height:1}
+.stat-label{color:var(--mid);font-size:14px;margin-top:8px}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:15px}
+th,td{padding:14px 12px;border-bottom:1px solid #DDE3EA;text-align:left;vertical-align:top}
+th{background:var(--navy);color:#fff;font-weight:600}
+tr.hl td{background:#FFF8E8}
+.price{font-family:Cambria,Georgia,serif;font-size:26px;color:var(--navy);font-weight:700}
+.tiers{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.tier{background:#fff;border:2px solid #DDE3EA;border-radius:10px;padding:28px}
+.tier.featured{border-color:var(--amber);box-shadow:0 8px 24px rgba(11,37,69,.12)}
+.tier .name{font-size:14px;letter-spacing:1.2px;text-transform:uppercase;color:var(--mid);font-weight:700}
+.tier .term{font-family:Cambria,Georgia,serif;font-size:30px;color:var(--navy);margin:6px 0 2px}
+.tier ul{list-style:none;margin:16px 0 22px}
+.tier li{padding:7px 0;border-bottom:1px dashed #E3E8EE;font-size:15px}
+.tier li::before{content:"\2713";color:var(--amber);font-weight:700;margin-right:8px}
+.cta-band{background:var(--navy);color:#fff;padding:56px 0;text-align:center}
+.cta-band h2{color:#fff}
+.cta-band p{color:#D9E1EA;max-width:640px;margin:0 auto 24px;font-size:17px}
+form{max-width:560px;margin:0 auto;text-align:left;background:#fff;border-radius:10px;padding:28px;color:var(--ink)}
+label{display:block;font-size:14px;font-weight:600;margin:12px 0 4px}
+input,select,textarea{width:100%;padding:10px;border:1px solid #C9D2DC;border-radius:5px;font-size:15px;font-family:inherit}
+footer{background:#0A1A30;color:#9FB0C2;font-size:13px;padding:28px 0;text-align:center}
+footer a{color:#C9D5E2}
+ol.steps{counter-reset:s;list-style:none}
+ol.steps li{position:relative;padding:12px 0 12px 54px;border-bottom:1px solid #E3E8EE;font-size:15.5px}
+ol.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:10px;width:36px;height:36px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+.quote{border-left:4px solid var(--amber);padding:12px 18px;background:#fff;font-size:15.5px;color:#333}
+.quote small{display:block;color:var(--mid);margin-top:6px}
+@media(max-width:640px){.hero h1{font-size:30px}.links a{margin-left:12px;font-size:14px}nav{height:auto;padding:12px 0}}
+</style></head><body>
+<div class="notice">Student capstone concept (Nexford University, BUS6140). Not an offer from, and not affiliated with or endorsed by, Exxon Mobil Corporation. Commercial terms are illustrative.</div>
+<header><div class="wrap"><nav><a class="brand" href="index.html">Advantaged <span>Supply</span> Program</a><div class="links"><a href="index.html" class="active">Home</a><a href="offering.html" class="">The Program</a><a href="pricing.html" class="">Commercial Terms</a><a href="trust.html" class="">Proof & Contact</a></div></nav></div></header>
+
+<div class="hero"><div class="wrap">
+<div class="for">For refiners, utilities and LNG buyers</div>
+<h1>Lock in lower-cost, lower-emission crude and LNG supply for one to five years.</h1>
+<p class="lead">Term contracts backed by the two lowest-cost growth basins in the portfolio, Guyana and the Permian, with certified methane-intensity data delivered with every cargo. One price formula. No surprises.</p>
+<a class="btn" href="trust.html#request">Request a term supply proposal</a>
+</div></div>
+<section><div class="wrap">
+<h2>What you get</h2>
+<p class="sub">Each benefit below rests on a specific feature of the program, and each feature produces a result you can measure in your own operation.</p>
+<div class="grid g3">
+<div class="card"><div class="tag">Price stability</div><h3>One transparent formula</h3><p>Every cargo is priced at Brent plus a fixed differential set at signing. You can budget a full term without renegotiating, and an optional collar caps your exposure in both directions.</p></div>
+<div class="card"><div class="tag">Reliability</div><h3>Supply from record-output basins</h3><p>Volumes are allocated from Guyana and Permian production, which set annual records in 2025. Your term is matched to committed capacity, not spot availability.</p></div>
+<div class="card"><div class="tag">Emissions reporting</div><h3>Certified intensity data with every cargo</h3><p>Each delivery carries a measured methane-intensity certificate, so your Scope 3 reporting rests on measured data rather than industry averages.</p></div>
+</div></div></section>
+<section class="alt"><div class="wrap">
+<h2>Who this program is built for</h2>
+<div class="grid g2">
+<div class="card"><h3>It is for</h3><p>Refiners that need a steady crude slate for 12 months or more. Utilities and industrial gas users planning fuel budgets against regulated tariffs. LNG importers that must show measured emissions data to lenders and regulators.</p></div>
+<div class="card"><h3>It is not for</h3><p>Spot or single-cargo buyers. Traders seeking short-dated optionality. Buyers who cannot commit to a minimum annual volume. Those needs are better served by the open market.</p></div>
+</div></div></section>
+
+<div class="cta-band"><div class="wrap"><h2>Ready to secure supply on your terms?</h2><p>Tell us your product, volume and preferred term. A supply specialist responds within two business days with a draft proposal.</p><a class="btn" href="trust.html#request">Request a term supply proposal</a></div></div>
+<footer><div class="wrap">Student capstone concept (Nexford University, BUS6140). Not an offer from, and not affiliated with or endorsed by, Exxon Mobil Corporation. Commercial terms are illustrative.<br>Figures on this site are drawn from public company reports and are cited on the Proof &amp; Contact page. Built by Abiodun A. Saka, 2026.</div></footer>
+</body></html>
